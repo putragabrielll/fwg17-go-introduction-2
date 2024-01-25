@@ -26,7 +26,7 @@ func Cetak(angka int){
 			temp_genap+=i
 		} else if i % 2 == 1 {
 			// fmt.Println(i)
-			temp_ganjil+=1
+			temp_ganjil+=i
 		}
 	}
 

@@ -11,7 +11,6 @@ import (
 // }
 
 func Pembulatan(angka float64) {
-	fmt.Println("---- Pembulatan! ----")
 	
 	temp := math.Round(angka * 100) / 100
 	fmt.Printf("Result Pembulatan: %.1f", temp)
