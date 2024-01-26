@@ -9,11 +9,11 @@ type bilangan struct {
 	fibonacci int
 }
 
-func isPrime(n int) bool {
+func isPrime(n int) bool { // 2
     if n <= 1 {
         return false
     }
-    for i := 2; i*i <= n; i++ {
+    for i := 2; i * i <= n; i++ {
         if n % i == 0 {
             return false
         }
@@ -30,8 +30,8 @@ func (temp_1 bilangan) bilanganGanjil() []int{
 func (temp_1 bilangan) bilanganGenap() []int{
 	return temp_1.genap
 }
-// func (temp_1 bilangan) deretanBilangan() []int{
-// 	return temp_1.ganjil
+// func (temp_1 bilangan) deretanFibonacci() []int{
+// 	return temp_1.fibonacci
 // }
 
 
@@ -41,7 +41,7 @@ func Cetak(angka int){
 	temp_genap := []int{}
 	// temp_fibonacci := []int{}
 
-	for i := 1; i <= angka; i++ {
+	for i := 1; i <= angka; i++ { // 1,2,3,4,5,....40
 		if i % 2 == 0 {
 			// fmt.Println(i)
 			temp_genap = append(temp_genap, i)
