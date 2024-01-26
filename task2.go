@@ -9,7 +9,7 @@ type bilangan struct {
 	fibonacci int
 }
 
-func isPrime(n int) bool { // 2
+func isPrime(n int) bool { // 5
     if n <= 1 {
         return false
     }
@@ -36,8 +36,8 @@ func (temp_1 bilangan) bilanganGenap() []int{
 
 
 func Cetak(angka int){
-	temp_prima := []int{}
-	temp_ganjil := []int{}
+	temp_prima := []int{} // 2 3
+	temp_ganjil := []int{} // 1
 	temp_genap := []int{}
 	// temp_fibonacci := []int{}
 
@@ -49,6 +49,7 @@ func Cetak(angka int){
 			// fmt.Println(i)
 			temp_ganjil = append(temp_ganjil, i)
 		}
+
 		if isPrime(i) {
             temp_prima = append(temp_prima, i)
         }
