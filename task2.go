@@ -24,10 +24,10 @@ func isPrime(n int) bool { // 5
 func (temp_1 bilangan) deretanPrima() []int{
 	return temp_1.prima
 }
-func (temp_1 bilangan) bilanganGanjil() []int{
+func (temp_1 bilangan) deretanGanjil() []int{
 	return temp_1.ganjil
 }
-func (temp_1 bilangan) bilanganGenap() []int{
+func (temp_1 bilangan) deretanGenap() []int{
 	return temp_1.genap
 }
 // func (temp_1 bilangan) deretanFibonacci() []int{
@@ -66,11 +66,11 @@ func Cetak(angka int){
 	var hasilPrima1 = &hasilPrima
 	fmt.Println(*hasilPrima1)
 
-	var hasilGanjil = data.bilanganGanjil()
+	var hasilGanjil = data.deretanGanjil()
 	var hasilGanjil1 = &hasilGanjil
 	fmt.Println(*hasilGanjil1)
 
-	var hasilGenap = data.bilanganGenap()
+	var hasilGenap = data.deretanGenap()
 	var hasilGenap1 = &hasilGenap
 	fmt.Println(*hasilGenap1)
 

@@ -11,5 +11,8 @@ func main() {
 	// fmt.Println("")
 	// Pembulatan(4.324)
 	
-	Cetak(40)
+	// Cetak(40)
+
+	// fmt.Println(CekKubus(25))
+	CekKubus(5)
 }
