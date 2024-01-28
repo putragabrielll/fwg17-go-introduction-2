@@ -62,8 +62,17 @@ func Cetak(angka int){
 		fibonacci: 12,
 	}
 
-	fmt.Println(data.deretanPrima())
-	fmt.Println(data.bilanganGanjil())
-	fmt.Println(data.bilanganGenap())
+	var hasilPrima = data.deretanPrima()
+	var hasilPrima1 = &hasilPrima
+	fmt.Println(*hasilPrima1)
+
+	var hasilGanjil = data.bilanganGanjil()
+	var hasilGanjil1 = &hasilGanjil
+	fmt.Println(*hasilGanjil1)
+
+	var hasilGenap = data.bilanganGenap()
+	var hasilGenap1 = &hasilGenap
+	fmt.Println(*hasilGenap1)
+
 	// fmt.Println(data.bilanganFibonacci())
 }
